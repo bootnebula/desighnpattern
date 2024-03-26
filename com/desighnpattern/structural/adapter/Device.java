@@ -1,5 +1,5 @@
 package com.desighnpattern.structural.adapter;
 
-public interface Phone {
+public interface Device {
     public void charge();
 }

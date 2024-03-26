@@ -1,6 +1,6 @@
 package com.desighnpattern.structural.adapter;
 
-public class IphoneAdapter implements Phone{
+public class IphoneAdapter implements Device{
 
     private iphone iphone;
 
@@ -11,6 +11,6 @@ public class IphoneAdapter implements Phone{
     @Override
     public void charge(){
         System.out.println("Charging iphone");
-        iphone.lightningPortOn(true);
+        iphone.lightningCharge(true);
     }
 }

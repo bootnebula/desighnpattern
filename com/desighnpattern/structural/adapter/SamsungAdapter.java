@@ -1,6 +1,6 @@
 package com.desighnpattern.structural.adapter;
 
-public class SamsungAdapter implements Phone{
+public class SamsungAdapter implements Device{
     private samsung samsung;
 
     SamsungAdapter(samsung s){
@@ -9,6 +9,6 @@ public class SamsungAdapter implements Phone{
     @Override
     public void charge(){
         System.out.println("Charging samsung");
-        samsung.usbthreeportOn(true);
+        samsung.usbFastCharge(true);
     }
 }

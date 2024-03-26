@@ -5,7 +5,7 @@ public class samsung
     private Boolean usbthreeport=true;
     private boolean bluetooth;
 
-    public Boolean usbthreeportOn(Boolean value){
+    public Boolean usbFastCharge(Boolean value){
         this.usbthreeport=value;
         return usbthreeport;
     }

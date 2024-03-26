@@ -6,10 +6,10 @@ public class YupChargeStation {
 
         //charge via adapter
         iphone iphone=new iphone();
-        Phone iphoneAdapter=new IphoneAdapter(iphone);
+        IphoneAdapter iphoneAdapter=new IphoneAdapter(iphone);
         iphoneAdapter.charge();
         samsung samsung = new samsung();
-        Phone samsungAdapter=new SamsungAdapter(samsung);
+        SamsungAdapter samsungAdapter=new SamsungAdapter(samsung);
         samsungAdapter.charge();
 
         //blutooth connect without adapter

@@ -6,7 +6,7 @@ public class iphone{
 
     private Boolean bluetooth;
 
-    public Boolean lightningPortOn(Boolean value) {
+    public Boolean lightningCharge(Boolean value) {
          this.lightningPort=value;
          return lightningPort;
     }
