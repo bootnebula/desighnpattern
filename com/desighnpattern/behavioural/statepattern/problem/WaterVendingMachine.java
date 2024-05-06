@@ -1,4 +1,4 @@
-package com.desighnpattern.behavioural.statepattern;
+package com.desighnpattern.behavioural.statepattern.problem;
 
 public class WaterVendingMachine {
 
@@ -85,5 +85,41 @@ public class WaterVendingMachine {
     @Override
     public String toString() {
         return "Wending machine state Water :"+this.avaialbleLiters+" availble money :"+coinsAvailable;
+    }
+
+    public static class boot {
+
+        public static void main(String[] args) {
+
+            WaterVendingMachine machine = new WaterVendingMachine();
+
+            System.out.println(machine);
+            machine.insertCoin();
+            machine.dispenseWater();
+
+            System.out.println(machine);
+            machine.insertCoin();
+            machine.insertCoin();
+            machine.dispenseWater();
+
+            System.out.println(machine);
+
+            machine.insertCoin();
+            machine.dispenseWater();
+            machine.dispenseWater();
+            System.out.println(machine);
+
+            machine.insertCoin();
+            machine.dispenseWater();
+            System.out.println(machine);
+
+            machine.insertCoin();
+            machine.dispenseWater();
+            System.out.println(machine);
+
+            machine.insertCoin();
+            machine.dispenseWater();
+            System.out.println(machine);
+        }
     }
 }
